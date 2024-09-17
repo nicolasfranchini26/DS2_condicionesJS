@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/desafio01.css">
+    <title>Desafío 1</title>
+</head>
+<body>
+
+
+    <h1>Agregar y quitar el borde con "UNCLICK"</h1>
+    <div class="imagen">
+        
+        <img id="bordeImagen" src="../assets/img/sticker 1.png" alt="" width="25%" 
+        onclick="
+        
+        if(resultadoBorde=== 0){
+        resultadoBorde = 1
+        bordeImagen.style.border = '2px solid red'
+        } else {
+        resultadoBorde = 0
+        bordeImagen.style.border = '0'
+        }
+        ">
+     </div>
+     
+        <a class="button" href="../index.html">Inicio</a>
+
+     <script src="../assets/js/index.js"></script>
+</body>
+</html>

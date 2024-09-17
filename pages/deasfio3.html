@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/desafio03.css">
+    <title>Desafío 3</title>
+</head>
+
+<body>
+
+    <h1>Ingresa Password Secreto</h1>
+
+    <div class="box">
+        <div class="container">
+            <select id="select1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <select id="select2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <select id="select3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+       <div class="btn">
+           <div class="ingresar" onclick="
+
+              valor1 = document.querySelector('#select1').value;
+              valor2 = document.querySelector('#select2').value;
+              valor3 = document.querySelector('#select3').value;
+
+              // Crear el password
+             password = valor1 + valor2 + valor3;
+
+             // Verificar el password y mostrar el mensaje adecuado
+             if (password === '911') {
+              respuesta.innerHTML = 'Password 1 correcto 👌';
+             } else if (password === '714') {
+             respuesta.innerHTML = 'Password 2 es correcto 👏';
+             } else {
+              respuesta.innerHTML = 'Password incorrecto 🧐';
+             }">Verificar
+            </div>
+        </div>
+    </div>
+  
+    <p id="resultado"></p>
+
+    <a class="button" href="../index.html">Inicio</a>
+
+    <script src="../assets/js/index.js"></script>
+</body>
+
+</html>

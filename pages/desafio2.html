@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/desafio02.css">
+    <title>Desadío 2</title>
+</head>
+
+<body>
+
+    <h1>Selecciona tus Stickers</h1>
+
+    <div class="sticker">
+        <img src="../assets/img/sticker1.jpg" alt="Sticker 1" width="100">
+        <p>Sticker 1 :</p>
+        <input type="number" id="input1" min="0" max="10" value="0">
+
+    </div>
+
+    <div class="sticker">
+        <img src="../assets/img/stickers 2.png" alt="Sticker 2" width="100">
+        <p>Sticker 2 :</p>
+        <input type="number" id="input2" min="0" max="10" value="0">
+    </div>
+
+    <div class="sticker">
+        <img src="../assets/img/sticker3.png" alt="Sticker 3" width="100">
+        <p>Sticker 3 :</p>
+        <input type="number" id="input3" min="0" max="10" value="0">
+    </div>
+
+    <div class="btn">
+        <div class="calcular" onclick="
+
+        // Obtener los valores de los inputs
+        sticker1 = Number(document.querySelector('#input1').value)
+        sticker2 = Number(document.querySelector('#input2').value)
+        sticker3 = Number(document.querySelector('#input3').value)
+
+        // Calcular la suma de stickers
+        totalStickers = sticker1 + sticker2 + sticker3;
+
+        //Resultado basado en la suma
+        if (totalStickers <= 10) {
+            resultadoStickers.innerHTML = `Llevas ${totalStickers} stickers 😊`;
+        } else {
+            resultadoStickers.innerHTML = 'Llevas demasiados stickers 😅';
+        }">Calcular
+        </div>
+    </div>
+    <p class="resultado"></p>
+
+
+    <a class="button" href="../index.html">Inicio</a>
+
+    <script src="../assets/js/index.js"></script>
+</body>
+
+</html>
